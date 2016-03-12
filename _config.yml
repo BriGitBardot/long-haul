@@ -14,9 +14,9 @@ paginate: 5
 navigation:
  - title: Home
    url: /index.html
- - title: About
+ - title: Über mich
    url: /about
- - title: Contact
+ - title: Kontact
    url: /contact
 
 social:
