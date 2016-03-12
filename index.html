@@ -8,7 +8,7 @@ title: Tilly's Hundeleben
   <ul class="posts noList">
     {% for post in paginator.posts %}
       <li>
-        {% assign months = "Januar|Februar|März|April|May|Juni|Juli|August|September|Oktober|November|December" | split: "|" %}
+        {% assign months = "Januar|Februar|März|April|May|Juni|Juli|August|September|Oktober|November|Dezember" | split: "|" %}
 {% assign m = page.date | date: "%-m" | minus: 1 %}
 {% assign day = page.date | date: "%d" %}
 {% assign month = months[m] %}
