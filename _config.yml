@@ -1,5 +1,5 @@
 title: Tillys Hundeleben
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+description: Anekdoten aus dem Leben eines griechischen Kokonis
 
 url: http://brigitbardot.github.io
 baseurl: "/long-haul"
@@ -16,7 +16,7 @@ navigation:
    url: /index.html
  - title: Über mich
    url: /about
- - title: Kontact
+ - title: Kontakt
    url: /contact
 
 social:
