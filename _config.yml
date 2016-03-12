@@ -1,8 +1,8 @@
 title: Tillys Hundeleben
 description: Anekdoten aus dem Leben eines griechischen Kokonis
 
-url: http://brigitbardot.github.io
-baseurl: "/long-haul"
+url: http://tillyshundeleben.de/
+baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
