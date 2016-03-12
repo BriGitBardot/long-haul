@@ -9,8 +9,8 @@ title: Tilly's Hundeleben
     {% for post in paginator.posts %}
       <li>
         <span class="date">
-        {% assign m = page.date | date: "%-m" %}
-        {{ post.date | date: '%-d. %B %Y' }}
+        {% assign m = page.date | date: "%c" %}
+        {{ post.date | date: '%d. %B %Y' }}
 {% case m %}
   {% when '1' %}Januar
   {% when '2' %}Februar
