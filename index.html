@@ -8,25 +8,12 @@ title: Tilly's Hundeleben
   <ul class="posts noList">
     {% for post in paginator.posts %}
       <li>
-        <span class="date">
-        {% assign m = page.date | date: '%-m' %}
-{{ page.date | date: '%d' }}
-{% case m %}
-  {% when '01' %}Januar
-  {% when '02' %}Februar
-  {% when '03' %}März
-  {% when '04' %}April
-  {% when '05' %}Mai
-  {% when '06' %}Juni
-  {% when '07' %}Juli
-  {% when '08' %}August
-  {% when '09' %}September
-  {% when '10' %}Oktober
-  {% when '11' %}November
-  {% when '12' %}Dezember
-{% endcase %}
-{{ page.date | date: '%Y' }}
-        </span>
+        {% assign months = "Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre" | split: "|" %}
+{% assign m = page.date | date: "%-m" | minus: 1 %}
+{% assign day = page.date | date: "%d" %}
+{% assign month = months[m] %}
+{% assign year = page.date | date: "%Y" %}
+<span class="date">{{ day }}/{{ month }}/{{ year }}</span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
       </li>
