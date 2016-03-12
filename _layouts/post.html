@@ -8,7 +8,10 @@ layout: default
       </div>
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date: '%B %d, %Y' }}</p>
+  {% assign months = "Januar|Februar|März|April|May|Juni|Juli|August|September|Oktober|November|Dezember" | split: "|" %}
+		{% assign m = page.date | date: "%-m" | minus: 1 %}
+		{% assign month = months[m] %}
+  <p class="meta">{{ post.date | date: '%d.'}} {{ month }} {{ post.date | date: '%Y'}}</p>
   
   {{ content }}
 
