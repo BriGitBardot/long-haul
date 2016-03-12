@@ -9,8 +9,8 @@ title: Tilly's Hundeleben
     {% for post in paginator.posts %}
       <li>
         <span class="date">
-        {% assign m = page.date | date: "%c" %}
-        {{ post.date | date: '%d. %B %Y' }}
+        {% assign m = page.date | date: "%-m" %}
+{{ page.date | date: "%-d" }}
 {% case m %}
   {% when '1' %}Januar
   {% when '2' %}Februar
@@ -25,6 +25,7 @@ title: Tilly's Hundeleben
   {% when '11' %}November
   {% when '12' %}Dezember
 {% endcase %}
+{{ page.date | date: "%Y" }}
         </span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
