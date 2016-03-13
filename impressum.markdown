@@ -1,5 +1,6 @@
 ---
 title:  "IMPRESSUM"
+layout: default
 ---
 
 ### Angaben gemäß § 5 TMG:
