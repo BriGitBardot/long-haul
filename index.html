@@ -3,7 +3,13 @@ layout: default
 title: Tilly's Hundeleben
 ---
 
-<div class="home" id="home">
+<audio id="audio_with_controls" 
+             autoplay = "true"
+             src="sirtaki.mp3" 
+             type="audio/mp3">
+      </audio>
+      
+      <div class="home" id="home">
   <h3 class="pageTitle">Anekdoten aus dem Leben eines griechischen Kokonis</h3>
   <ul class="posts noList">
     {% for post in paginator.posts %}
