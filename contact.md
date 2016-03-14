@@ -6,7 +6,8 @@ title: Kontakt
 <div id="contact">
   <h1 class="pageTitle">Kontaktiert mich!</h1>
   <div class="contactContent">
-    <p class="intro">Da wir Kokonis ein aufgeschlossenes Wesen haben, nehme ich immer gerne Anregungen oder Kritik rund um meinen Blog entgegen, beantworte auch gerne Fragen dazu. Nutzt einfach dieses Kontaktformular und lasst mir eine Mail zukommen. Mein Herrchen wird euch schnellstmöglich antworten.</p>
+    <p class="intro">Da wir Kokonis ein aufgeschlossenes Wesen haben, nehme ich immer gerne Anregungen oder Kritik rund um meinen Blog entgegen, beantworte auch gerne Fragen dazu.</p>
+    <p class="intro">Nutzt einfach dieses Kontaktformular und lasst mir eine Mail zukommen. Mein Herrchen wird euch schnellstmöglich antworten.</p>
     
   </div>
   <form action="http://formspree.io/brimaidesigns@gmail.com" method="POST">
