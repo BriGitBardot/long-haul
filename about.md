@@ -2,7 +2,12 @@
 layout: default
 title: Über mich
 ---
-
+<audio id="audio_with_controls" 
+             autoplay = "true"
+             src="sirtaki.mp3" 
+             type="audio/mp3">
+</audio>
+      
 <div class="post">
 	<h1 class="pageTitle">About Long Haul</h1>
 	<img src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt=""> 
