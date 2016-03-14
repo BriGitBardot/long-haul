@@ -1,9 +1,9 @@
 ---
-title:  "IMPRESSUM"
+title:  "Impressum"
 layout: default
 ---
-
-### Angaben gemäß § 5 TMG:
+###Impressum
+## Angaben gemäß § 5 TMG:
 Annika Hamachers   
 Dahlweg 34   
 48153 Münster   
